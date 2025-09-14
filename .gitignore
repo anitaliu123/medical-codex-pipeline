@@ -1,0 +1,24 @@
+# Raw datasets (never commit)
+input/
+raw_downloads/
+*.RRF
+*.rrf
+*.txt
+*.xml
+*.zip
+
+# Large “latest” outputs — keep local only
+output/csv/*_latest.csv
+
+# Small samples are OK for grading
+!output/csv/*_sample.csv
+
+# OS / Python / IDE
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+.vscode/
+.idea/
