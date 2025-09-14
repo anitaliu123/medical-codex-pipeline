@@ -7,10 +7,9 @@ raw_downloads/
 *.xml
 *.zip
 
-# Large “latest” outputs — keep local only
+# Keep uncompressed "latest" local, but allow compressed latest and small samples
 output/csv/*_latest.csv
-
-# Small samples are OK for grading
+!output/csv/*_latest.csv.gz
 !output/csv/*_sample.csv
 
 # OS / Python / IDE
@@ -22,3 +21,6 @@ __pycache__/
 venv/
 .vscode/
 .idea/
+
+# allow dependency file
+!requirements.txt
